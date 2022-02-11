@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="../HOME/img/icon.png" type="image/png">
-    <link rel="stylesheet" href="../example_2/example_2.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="example_2.css">
 </head>
 <body>
     <header class="container header-nav">
@@ -15,31 +15,31 @@
         <div class="container content">
             <h3>1-й ШАГ. Открываем бронирование (PNR)</h3>
             <p>RT номер брони (PNR)</p>
-            <img src="../example_2/img/example_2-1.png" alt=""><br><br>
+            <img src="img/example_2-1.png" alt=""><br><br>
     
             <h3>2-й ШАГ. Открываем запись электронного билета (по номеру строки FA)</h3>
             <p>TWD/L11</p>
-            <img src="../example_2/img/example_2-2.png" alt=""><br><br>
+            <img src="img/example_2-2.png" alt=""><br><br>
 
             <h3>3-й ШАГ. Проверяем статус электронного билета.</h3>
             <p>Должен быть «О»</p>
-            <img src="../example_1/img/example_3.png" alt=""><br><br>
+            <img src="img/example_3.png" alt=""><br><br>
 
             <h3>4-й ШАГ. Проверяем оплаченные таксы.</h3>
             <p>TWD/TAX</p>
-            <img src="../example_1/img/example_4.png" alt=""><br><br>
+            <img src="img/example_4.png" alt=""><br><br>
 
             <h3>5-й ШАГ. Вызываем правила тарифа билета принятого к обмену.</h3>
             <h3>FQD «откуда» «куда» /A «авиакомпания» /D «дата вылета» / R, «дата продажи» / C «класс»</h3>
             <p>FQDTASMMK/ASU/D11APR*24APR/R,10FEB22/CT</p>
-            <img src="../example_2/img/example_2-5-1.png" alt=""><br><br>
+            <img src="img/example_2-5-1.png" alt=""><br><br>
             <p>FQDTASMMK/ASU/D11APR*24APR/R,10FEB22/CN</p>
-            <img src="../example_2/img/example_2-5-2.png" alt=""><br><br>
+            <img src="img/example_2-5-2.png" alt=""><br><br>
             <h3>6-й ШАГ. Читаем правила тарифа билета принятого к обмену. Так как в данном авиабилете участвуют два тарифа, нам нужно проверить условия обоих тарифа и так как авиабилет полностью не использован применить штраф тарифа у которого сумма штрафа больше.</h3>
             <p>FQN05//PE</p>
-            <img src="../example_2/img/example_2-6-1.png" alt="">
+            <img src="img/example_2-6-1.png" alt="">
             <p>FQN05//PE</p>
-            <img src="../example_2/img/example_2-6-2.png" alt=""> <br><br>
+            <img src="img/example_2-6-2.png" alt=""> <br><br>
             <h3>Как видно, по правилам обоих тарифов авиакомпания разрешает производить обмен как частично использованного, так и полностью неиспользованного билета со штрафом 37 евро.<br>
             Если сумма штрафов была бы разными, тогда по польностью не использованным билетам применили бы штраф сумму которая выше. По частично использованному авиабилету приминяеться штраф по участку на которую делаеться обмен. <br> 
             Если нет добора по тарифу и таксам, тогда делаем Ревалидацию авиабилета.</h3><br><br>
@@ -47,15 +47,15 @@
             <h3>7-й ШАГ. Если штраф в ЕВРО. Делаем пересчет в Сумы.</h3>
             <p>FQC37EUR/UZS</p>
             <h3>Получается  штраф = 457477 сум.</h3>
-            <img src="../example_2/img/example_2-7.png" alt=""><br><br>
+            <img src="img/example_2-7.png" alt=""><br><br>
 
             <h3>8-й ШАГ. Возвращаемся в бронирование.</h3>
             <p>RT</p>
-            <img src="../example_2/img/example_2-8-1.png" alt=""><br><br>
+            <img src="img/example_2-8-1.png" alt=""><br><br>
 
             <h3>9-й ШАГ. Меняем даты вылета. Для примера на перелете туда (строка 2 и 3).</h3>
             <p>SB04APR2,3</p>
-            <img src="../example_2/img/example_2-8-2.png" alt=""><br><br>
+            <img src="img/example_2-8-2.png" alt=""><br><br>
 
             <h3>10-й ШАГ. Сохраняем изменения.</h3>
             <p>RFUTKUR; ER</p><br><br>
@@ -65,27 +65,27 @@
             
             <h3>12-й ШАГ. Создание маски TST с расчетом на дату оформления билета: <br> для просмотра ТАКС НОВОГО РАСЧЕТА:</h3>
             <p>FXP/ET/R,10FEB22</p>
-            <img src="../example_3/img/example_3-12-1.png" alt="">
-            <img src="../example_3/img/example_3-12-2.png" alt="">
+            <img src="img/example_3-12-1.png" alt="">
+            <img src="img/example_3-12-2.png" alt="">
             <br><br>
 
             <h3>13-й ШАГ. Открываем запись электронного билета</h3>
             <p>TWD/L11</p>
-            <img src="../example_3/img/example_3-13.png" alt="">
+            <img src="img/example_3-13.png" alt="">
             
             <h3>14-й ШАГ. Вызываем список оплаченных сборов для просмотра ТАКС СТАРОГО РАСЧЕТА:</h3>
             <p>TWD/TAX</p>
-            <img src="../example_3/img/example_3-14.png" alt=""><br><br>
+            <img src="img/example_3-14.png" alt=""><br><br>
 
             <h3>15-й ШАГ. ДЕЛАЕМ РАСЧЕТЫ ДОПЛАТЫ ПО ТАКСАМ </h3>
             <p>Таксы НОВОГО РАСЧЕТА – таксы СТАРОГО РАСЧЕТА = в нашем случае 0 (доплаты по таксам нет)</p>
                         
             <h3>16-й ШАГ. Т.к. у нас полностью неиспользованный билет, воспользуемся командой FXX для расчета стоимости нашего бронирования с новыми сегментами на сегодняшнюю датудля просмотра ТАРИФА НОВОГО РАСЧЕТА:</h3>
             <p>FXX/ET/R,DO–OBD</p>
-            <img src="../example_3/img/example_3-16-1.png" alt=""><br><br>
+            <img src="img/example_3-16-1.png" alt=""><br><br>
             <h3>Открываем запись старого электронного билета (где 11 –номер строки FA) для просмотра ТАРИФА СТАРОГО РАСЧЕТА:</h3>
             <p>TWD/L11</p>
-            <img src="../example_3/img/example_3-16-2.png" alt=""><br><br>
+            <img src="img/example_3-16-2.png" alt=""><br><br>
             <h3>Вычисляем разницу в тарифах старого билета и новым расчетом на сегодняшний день.</h3>
             <p>Тариф НОВОГО РАСЧЕТА – тариф СТАРОГО РАСЧЕТА = в нашем случае 0 (доплаты по тарифу нет)</p>
             
@@ -205,8 +205,8 @@
 </body>
 
 <footer>
-    <a href="../HOME/index.html">
-        <img src="../HOME/img/amadeus_logo.png" alt="">
+    <a href="index.html">
+        <img src="img/amadeus_logo.png" alt="">
     </a>
 </footer>
 </html>
